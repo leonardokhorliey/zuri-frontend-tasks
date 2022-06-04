@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebube Okoli</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            background: url("IMG_20210716_145525.jpg");
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            box-shadow: 2px 2px 8px 2px #888888;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.75rem;
+            background-color: transparent;
+            padding: 10px 40px;
+            border-radius: 20px;
+        }
+
+        a:hover {
+            background-color: rgba(128, 128, 128, 0.418);
+            font-size: 1rem;
+            color: white;
+        }
+
+        #selected {
+            font-size: 1rem;
+            font-weight: bold;
+            color: coral;
+            background-color: black;
+        }
+
+        main {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgba(255, 255, 255, 0.863);
+        }
+
+        footer {
+            background-color: #1d1e22;
+            height: 40px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            bottom: 0;
+        }
+
+        section {
+            width: 80%;
+            margin: 30px auto;
+            display: flex;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+
+        .about span {
+            font-size: 5rem;
+            color: coral;
+        }
+
+        .about p {
+            font-size: 1.5rem;
+        }
+
+        .about img {
+            border-radius: 20px;
+            box-shadow: 2px 2px 8px 2px #888888;
+            margin: 30px 0 30px 0;
+            
+        }
+
+        .about div {
+            width: 500px;
+
+        }
+
+        .skills {
+            display: grid;
+            place-items: center;
+        }
+
+        .skills h2 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-top: 40px;
+            text-decoration: underline;
+        }
+
+        .skills img {
+            filter: grayscale(100%)
+        }
+
+        .skills ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .skills li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1rem;
+            margin: 5px 30px;
+        }
+
+        .skills li span {
+            margin: 0 0 0 10px;
+        }
+
+        #contact {
+            width: 20rem;
+            margin: 30px auto;
+            border-radius: 10px;
+            height: 4rem;
+            box-shadow: 2px 2px 8px 2px #888888;
+            background: linear-gradient(90deg, blue, coral);
+            border: 0;
+            cursor: pointer;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Ebube Okoli</h2>
+
+        <a id= "selected" href="#"> Home</a>
+        <a href="./contactMe.html"> Contact Me</a>
+        <a href="./register.html"> Register</a>
+        <a href="./login.html"> Sign In</a>
+    </header>
+
+    <main>
+        <section class= "about">
+            <div>
+                <h1>Hi, I am <br/><span>Ebube Okoli</span></h1>
+
+                <p>
+                    I am a Software Engineer with a wide variety of other interests in the Technology space. I am currently experienced with building simple static webpages, as well as interactive Web applications. I have worked on a number of projects as a set off to my career
+                    and I am looking to work with other engineers to build scalable applications for the Web2.0 and Web3.0.<br/>
+                    Invite me to your communities, refer me to Full-Stack roles, sign me onto your projects. Let us build the next big product.
+                </p>
+            </div>
+            <img src="./screenMe.jpg" alt="Ebube Okoli" width= "450" height= "520">
+            
+        </section>
+        
+
+        <section class= "skills">
+            <h2>Skills</h2>
+            <ul id= "skills">
+                <li>
+                    <img src="./html5.svg.png" alt="Ebube Okoli" width= "50" height= "50">
+                    <span>HTML</span>
+                </li>
+
+                <li>
+                    <img src="./css3.png" alt="Ebube Okoli" width= "50" height= "50">
+                    <span>CSS</span>
+                </li>
+
+                <li>
+                    <img src="./javaScript.png" alt="Ebube Okoli" width= "50" height= "50">
+                    <span>JavaScript</span>
+                </li>
+
+                <li>
+                    <img src="./react.png" alt="Ebube Okoli" width= "50" height= "50">
+                    <span>React</span>
+                </li>
+
+                <li>
+                    <img src="./angular.png" alt="Ebube Okoli" width= "50" height= "50">
+                    <span>Angular</span>
+                </li>
+
+                <li>
+                    <img src="./python.png" alt="Ebube Okoli" width= "50" height= "50">
+                    <span>Python</span>
+                </li>
+            </ul>
+        </section>
+        <hr/>
+
+        <section>
+            <button id="contact" onclick="location.href= './contactMe.html'">
+                Contact Me
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        &#169 Copyright 2022. Ebube Okoli.
+    </footer>
+    
+</body>
+</html>
